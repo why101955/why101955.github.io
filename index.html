@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>李洁盈，你愿意做我的女朋友吗？</title>
+    <style>
+      body {
+        background-color: #fff;
+      }
+      .heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        margin: 50px auto;
+        transform: none;
+      }
+      .heart:before,
+      .heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: red;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+      .heart:hover:before,
+      .heart:hover:after {
+        animation: beat 1s ease-in-out infinite alternate;
+      }
+      @keyframes beat {
+        to {
+          transform: scale(1.3) rotate(-45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; padding-top: 50px;">
+      <h1>李洁盈，你愿意做我的女朋友吗？</h1>
+      <div class="heart"></div>
+    </div>
+  </body>
+</html>
+
